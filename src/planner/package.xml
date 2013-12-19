@@ -42,7 +42,7 @@
   <buildtool_depend>catkin</buildtool_depend>
 
   <!-- Build Dependencies -->
-  <build_depend>mission_controller</build_depend>
+  <!--<build_depend>mission_controller</build_depend>-->
   <build_depend>os5000</build_depend>
   <build_depend>rosconsole</build_depend>
   <build_depend>roscpp</build_depend>
@@ -54,7 +54,7 @@
 
   <!-- Run Dependencies -->
   <run_depend>message_generation</run_depend>
-  <run_depend>mission_controller</run_depend>
+  <!--<run_depend>mission_controller</run_depend>-->
   <run_depend>os5000</run_depend>
   <run_depend>rosconsole</run_depend>
   <run_depend>roscpp</run_depend>
