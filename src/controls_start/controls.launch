@@ -1,9 +1,10 @@
 <!-- Starts all Stingray controls processes independent of other systems -->
 <launch>
 
+  <!-- Configure Stingray control machine -->
+  <include file="$(find controls_start)/controls.machine" />
+
   <!-- Launch Stingray controls with configuration parameters -->
-  <include file="$(find controls_start)/config/odometry.xml" />
   <include file="$(find controls_start)/config/navigation.xml" />
-  <include file="$(find controls_start)/config/staticTransforms.xml" />
 
 </launch>
