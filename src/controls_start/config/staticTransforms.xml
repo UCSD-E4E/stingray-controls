@@ -1,0 +1,51 @@
+<!--
+<launch>
+	<node pkg="tf" type="static_transform_publisher" name="tf_base_link"
+		args="0 0 0 0 0 0 /base_link /stereo 100" machine="vision"/>
+
+	<node pkg="tf" type="static_transform_publisher" name="tf_base_footprint"
+		args="0 0 0 0 0 0 /base_link /base_footprint 100" machine="vision"/>
+	<node pkg="tf" type="static_transform_publisher" name="tf_camera"
+		args="0 0 0 0 0 0 /stereo /camera 100" machine="vision"/>
+
+
+	<node pkg="tf" type="static_transform_publisher" name="tf_left_camera_optical_frame"
+		args="0 0 0 0 0 0 /stereo /camera_optical_frame 100" machine="vision"/>
+
+	<node pkg="tf" type="static_transform_publisher" name="tf_right_camera_optical_frame"
+		args="0 0 0 0 0 0 /stereo /camera_optical_frame 100" machine="vision"/>
+
+	<node pkg="tf" type="static_transform_publisher" name="tf_imu"
+		args="0 0 0 0 0 0 /base_link /imu 100" machine="control"/>
+
+	<node pkg="tf" type="static_transform_publisher" name="tf_compass"
+		args="0 0 0 0 0 0 /base_link /compass 100" machine="control"/>
+</launch>
+-->
+
+<launch>
+	<!-- arguments for static_transform_publisher:  x y z yaw pitch roll frame_id child_frame_id period_in_ms -->
+
+	<arg name="PI" default="3.14159265359"/>
+	<arg name="PI_2" default="1.57079632679"/>
+	
+	<node pkg="tf" type="static_transform_publisher" name="tf_base_link" 
+		args=" 0.3556 0.049657 0.127 -$(arg PI_2) 0 -$(arg PI_2) /base_footprint /camera_optical 100" machine="vision"/>
+
+	<node pkg="tf" type="static_transform_publisher" name="tf_left_camera_optical_frame" 
+		args="0 0 0 0 0 0 /camera_optical /stereo_optical_left 100" machine="vision"/>
+	<!--node pkg="tf" type="static_transform_publisher" name="tf_base_footprint"
+		args="0 0 0 0 0 1 /base_footprint /base_link 100" machine="vision"/-->
+
+	<node pkg="tf" type="static_transform_publisher" name="tf_right_camera_optical_frame" 
+		args=" 0.099314 0 0 0 0 0 /camera_optical /stereo_optical_right 100" machine="vision"/>
+
+	<node pkg="tf" type="static_transform_publisher" name="tf_imu" 
+		args="-0.20574 0.09474 0.22352 $(arg PI_2) 0 0 /base_footprint /imu 100" machine="vision"/>
+
+	<node pkg="tf" type="static_transform_publisher" name="tf_compass" 
+		args="-0.26543 0.00254 0.27305 0 $(arg PI) 0 /base_footprint /compass 100" machine="vision"/>
+
+	<!-- translation units in meters & rotation units in radians -->
+
+</launch>
