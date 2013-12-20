@@ -1,0 +1,4 @@
+<!-- Launch configuration for controls machine only. -->
+<launch>
+  <machine name="control" address="stingray-control" default="true" env-loader="/home/stingray-control/stingray-controls/devel/env.sh" />
+</launch>
