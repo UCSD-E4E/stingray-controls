@@ -4,7 +4,7 @@ project(planner)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
-find_package(catkin REQUIRED COMPONENTS dynamic_reconfigure mission_controller os5000 rosconsole roscpp rospy message_generation sensor_msgs std_msgs)
+find_package(catkin REQUIRED COMPONENTS dynamic_reconfigure os5000 rosconsole roscpp rospy message_generation sensor_msgs std_msgs)
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)

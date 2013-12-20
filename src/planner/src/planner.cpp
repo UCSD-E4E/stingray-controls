@@ -128,7 +128,7 @@ void Planner::stateEstimatorCallback(const state_estimator::State::ConstPtr& msg
  * Computes the target states from mission requests in mission controller
  *---------------------------------------------------------------------*/
 
-void Planner::followPathCallback(const mission_controller::TargetWaypoints::ConstPtr& msg)
+/*void Planner::followPathCallback(const mission_controller::TargetWaypoints::ConstPtr& msg)
 {
     //Check if setting of targets has been disabled by dynamicReconfigure
     if (!dynamic_reconfigure_enable)
@@ -170,7 +170,7 @@ void Planner::followPathCallback(const mission_controller::TargetWaypoints::Cons
         ROS_DEBUG("Dynamic Reconfigure Override.");
     }
 } // end followPath()
-
+*/
 
 /*------------------------------------------------------------------------------
  * microstrainCallback()

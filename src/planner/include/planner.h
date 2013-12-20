@@ -50,7 +50,7 @@
 #include <sensor_msgs/Imu.h>
 
 // Custom messages.
-#include "mission_controller/TargetWaypoints.h"
+//#include "mission_controller/TargetWaypoints.h"
 #include "planner/TargetStates.h"
 
 // Dynamic reconfigure.
@@ -80,7 +80,7 @@ public:
     void publishTargetStates(ros::Publisher *pubTargetStates);
 
     //! Follow waypoints from missionController
-    void followPathCallback(const mission_controller::TargetWaypoints::ConstPtr& msg);
+    //void followPathCallback(const mission_controller::TargetWaypoints::ConstPtr& msg);
 
     //! Callback function for dynamic configuration of gains
     void configCallback(planner::plannerParamsConfig& config, uint32_t level);

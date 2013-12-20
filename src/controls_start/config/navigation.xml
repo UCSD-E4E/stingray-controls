@@ -14,7 +14,7 @@
     <param name="target_yaw"   value="0.0"/> 
   </node>
 
-<node pkg="nav" type="nav" name="nav" machine="control">
+  <node pkg="nav" type="nav" name="nav" machine="control">
     <param name="rate" value="200"/>
     <param name="gain_roll_p"   value="0.0"/>
     <param name="gain_roll_i"   value="0.0"/>
@@ -48,5 +48,4 @@
     <param name="max_int_speed" value="50.0"/>
   </node>
 
-  <node pkg="mission_controller" type="mission_controller" name="mission_controller" machine="control"/>
 </launch>
