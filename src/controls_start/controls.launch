@@ -2,9 +2,12 @@
 <launch>
 
   <!-- Configure Stingray control machine -->
-  <include file="$(find controls_start)/controls.machine" />
+<!--  <include file="$(find controls_start)/controls.machine" />-->
 
   <!-- Launch Stingray controls with configuration parameters -->
   <include file="$(find controls_start)/config/navigation.xml" />
+
+  <!-- Launch Stingray sensors with configuration parameters -->
+  <include file="$(find controls_start)/config/sensors.xml" />
 
 </launch>
