@@ -1,7 +1,7 @@
 <launch>
-  <node pkg="dynamic_reconfigure" type="reconfigure_gui" name="reconfigure_gui"/>
+  <node pkg="rqt_reconfigure" type="rqt_reconfigure" name="rqt_reconfigure"/>
 
-  <node pkg="rxtools" type="rxplot" name="rxplot"
+  <node pkg="rqt_console" type="rqt_console" name="rqt_console"
         args="/targetStates/target_roll:target_pitch">
   </node>
 </launch>
