@@ -1,0 +1,9 @@
+<launch>
+
+  <node pkg="microstrain_3dmgx2_imu" type="imu_node" name="microstrain_3dmgx2_node" output="screen" machine="control">
+    <param name="_port"  type="string" value="/dev/tty***" />
+  </node>
+
+  <node pkg="imu" type="read_imu" node="read_imu" />
+
+</launch>
