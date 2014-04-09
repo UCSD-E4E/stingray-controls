@@ -4,3 +4,4 @@ devel/
 install/
 .svn/
 *.bag
+*.swp

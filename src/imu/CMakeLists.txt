@@ -45,10 +45,18 @@ find_package(catkin REQUIRED COMPONENTS
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
 
 ## Generate messages in the 'msg' folder
+<<<<<<< HEAD
 add_message_files(
   FILES
   position.msg
 )
+=======
+# add_message_files(
+#   FILES
+#   Message1.msg
+#   Message2.msg
+# )
+>>>>>>> e16b0364b493536517a3eec58e42b113aa4926d5
 
 ## Generate services in the 'srv' folder
 # add_service_files(
@@ -61,7 +69,11 @@ add_message_files(
 # add_action_files(
 #   FILES
 #   Action1.action
+<<<<<<< HEAD
 #   Action2.actn
+=======
+#   Action2.action
+>>>>>>> e16b0364b493536517a3eec58e42b113aa4926d5
 # )
 
 ## Generate added messages and services with any dependencies listed here
@@ -80,9 +92,15 @@ add_message_files(
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
+<<<<<<< HEAD
 INCLUDE_DIRS include
 #  LIBRARIES imu
   CATKIN_DEPENDS roscpp rospy std_msgs message_runtime
+=======
+#  INCLUDE_DIRS include
+#  LIBRARIES imu
+#  CATKIN_DEPENDS roscpp rospy std_msgs
+>>>>>>> e16b0364b493536517a3eec58e42b113aa4926d5
 #  DEPENDS system_lib
 )
 
@@ -93,7 +111,11 @@ INCLUDE_DIRS include
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
 # include_directories(include)
+<<<<<<< HEAD
 include_directories(include
+=======
+include_directories(
+>>>>>>> e16b0364b493536517a3eec58e42b113aa4926d5
   ${catkin_INCLUDE_DIRS}
 )
 
@@ -163,5 +185,9 @@ include_directories(include
 # catkin_add_nosetests(test)
 
 add_executable(read_imu src/imu_subscriber.cpp)
+<<<<<<< HEAD
 target_link_libraries(read_imu ${catkin_LIBRARIES})
 #target_link_libraries(position_data ${catkin_LIBRARIES})
+=======
+target_link_libraries(read_imu ${catkin_LIBRARIES})
+>>>>>>> e16b0364b493536517a3eec58e42b113aa4926d5
